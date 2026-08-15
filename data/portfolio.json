@@ -137,13 +137,37 @@
   ],
   "projects": [
     {
+      "title": "Premium Resources",
+      "description": "Access to high-quality books, study materials, and high-speed Wi-Fi.",
+      "thumbnail": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800",
+      "techStack": [],
+      "gradient": "#51fbfb, rgb(13, 1, 60)",
+      "github": "#",
+      "live": "#",
+      "year": "2024",
+      "role": "Library"
+    },
+    {
       "title": "Study Area",
       "description": "Quiet and comfortable seating arrangement designed for long hours of focus.",
       "role": "Hall",
       "year": "2026",
       "github": "#",
       "live": "#",
-      "thumbnail": "/uploads/1786789061324_unnamed__1_.webp",
+      "thumbnail": "/uploads/1786789062815_unnamed__1_.webp",
+      "gradient": "#14f195, rgb(13, 1, 60)",
+      "techStack": [
+        "premium"
+      ]
+    },
+    {
+      "title": "Premium Resources",
+      "description": "Access to high-quality books, study materials, and high-speed Wi-Fi.",
+      "role": "Hall",
+      "year": "2026",
+      "github": "#",
+      "live": "#",
+      "thumbnail": "/project-placeholder.png",
       "gradient": "#14f195, rgb(13, 1, 60)",
       "techStack": [
         "premium"
