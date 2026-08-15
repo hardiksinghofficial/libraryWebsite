@@ -532,7 +532,7 @@ export default function AdminPage() {
                       if (res.ok) {
                         toast.dismiss(loadingToast);
                         toast.success("Site configuration saved!");
-                        fetchPortfolioData(passphrase);
+                        fetchPortfolioData();
                         setNewLogoFile(null);
                         setNewHeroFile(null);
                       } else {
