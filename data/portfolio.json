@@ -1,0 +1,150 @@
+{
+  "siteConfig": {
+    "title": "Insight Library",
+    "logoImage": "",
+    "typewriterStrings": [
+      "THE SELF STUDY ZONE",
+      "FOCUS • LEARN • GROW",
+      "ACHIEVE YOUR GOALS"
+    ],
+    "hero": {
+      "image": "",
+      "quote": "The best investment you can make is in yourself.",
+      "locationText": "Near Chris Jyoti School, Hotel Chandra View, Satna, (M.P.)"
+    },
+    "contact": {
+      "phone": "+917999436719",
+      "whatsapp": "917999436719",
+      "mapUrl": "https://maps.google.com/?q=Near+Chris+Jyoti+School,+Hotel+Chandra+View,+Satna",
+      "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.499981932014!2d80.84138827496444!3d24.571935478118753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39847f5994f154d3%3A0xd9c8e32aebcd56b4!2sINSIGHT%20LIBRARY!5e0!3m2!1sen!2sin!4v1786779767504!5m2!1sen!2sin"
+    },
+    "sectionHeaders": {
+      "features": { "title": "Library Features & Amenities", "subtitle": "Everything you need to stay focused and achieve your goals." },
+      "offers": { "title": "Exclusive Offers", "subtitle": "Take advantage of our special packages and discounts." },
+      "gallery": { "title": "Inside Our Library", "subtitle": "Take a look at our premium seating and facilities." },
+      "contact": { "title": "Book My Seat", "subtitle": "Fill out the form below to reserve your spot instantly!" }
+    },
+    "seats": {
+      "available": 42,
+      "total": 100
+    }
+  },
+  "shifts": [
+    "Full Day",
+    "Morning (7 AM - 12 PM)",
+    "Afternoon (12 PM - 5 PM)",
+    "Evening (5 PM - 10 PM)"
+  ],
+  "offers": [
+    {
+      "title": "Early Bird Special",
+      "description": "Join before 8 AM and get 10% off your monthly subscription.",
+      "icon": "Clock",
+      "color": "from-orange-500/20 to-transparent",
+      "borderColor": "border-orange-500/20"
+    },
+    {
+      "title": "Refer a Friend",
+      "description": "Bring a friend and you both receive 15% off your next month.",
+      "icon": "Users",
+      "color": "from-blue-500/20 to-transparent",
+      "borderColor": "border-blue-500/20"
+    },
+    {
+      "title": "Quarterly Pass",
+      "description": "Pay for 3 months upfront and get 15 days absolutely free.",
+      "icon": "Gift",
+      "color": "from-green-500/20 to-transparent",
+      "borderColor": "border-green-500/20"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Self Study Environment",
+      "icon": "FaBookOpen",
+      "iconColor": "text-blue-500",
+      "category": "Features",
+      "description": "Immerse yourself in our soundproofed, distraction-free zones designed specifically for deep focus."
+    },
+    {
+      "name": "Quality Resources",
+      "icon": "FaBook",
+      "iconColor": "text-green-500",
+      "category": "Features",
+      "description": "Access a wide collection of standard reference books and materials for all competitive exams."
+    },
+    {
+      "name": "Discipline & Consistency",
+      "icon": "FaClock",
+      "iconColor": "text-orange-500",
+      "category": "Features",
+      "description": "Build a strong study routine surrounded by like-minded, ambitious peers striving for success."
+    },
+    {
+      "name": "Achieve Your Goals",
+      "icon": "FaTrophy",
+      "iconColor": "text-yellow-500",
+      "category": "Features",
+      "description": "Reach your full potential and ace your exams in an environment optimized for peak productivity."
+    },
+    {
+      "name": "High-Speed Wi-Fi",
+      "icon": "FaWifi",
+      "iconColor": "text-blue-400",
+      "category": "Amenities",
+      "description": "Seamless, high-speed internet connectivity for online classes, mock tests, and research."
+    },
+    {
+      "name": "Fully Air Conditioned",
+      "icon": "FaSnowflake",
+      "iconColor": "text-cyan-400",
+      "category": "Amenities",
+      "description": "Stay comfortable in our climate-controlled environment all year round, regardless of the weather outside."
+    },
+    {
+      "name": "RO Purified Water",
+      "icon": "FaDroplet",
+      "iconColor": "text-blue-500",
+      "category": "Amenities",
+      "description": "Clean, chilled, and safe drinking water available 24/7 to keep you hydrated and refreshed."
+    },
+    {
+      "name": "CCTV Security",
+      "icon": "FaVideo",
+      "iconColor": "text-red-500",
+      "category": "Amenities",
+      "description": "Round-the-clock surveillance throughout the premises for your complete safety and peace of mind."
+    },
+    {
+      "name": "Personal Lockers",
+      "icon": "FaBox",
+      "iconColor": "text-yellow-600",
+      "category": "Amenities",
+      "description": "Secure, designated storage space for your books, laptops, and personal belongings."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Study Area",
+      "description": "Quiet and comfortable seating arrangement designed for long hours of focus.",
+      "thumbnail": "https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&q=80&w=800",
+      "techStack": [],
+      "gradient": "#14f195, rgb(13, 1, 60)",
+      "github": "#",
+      "live": "#",
+      "year": "2024",
+      "role": "Facility"
+    },
+    {
+      "title": "Premium Resources",
+      "description": "Access to high-quality books, study materials, and high-speed Wi-Fi.",
+      "thumbnail": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800",
+      "techStack": [],
+      "gradient": "#51fbfb, rgb(13, 1, 60)",
+      "github": "#",
+      "live": "#",
+      "year": "2024",
+      "role": "Library"
+    }
+  ]
+}
