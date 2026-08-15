@@ -141,14 +141,31 @@ export default function AdminPage() {
     const savedPass = sessionStorage.getItem("admin_passphrase");
     if (savedPass) {
       setPassphrase(savedPass);
-      // Validate saved pass on mount
-      fetchPortfolioData(savedPass);
+      // Validate saved pass securely against backend on mount
+      fetch("/api/auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ passphrase: savedPass })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          setIsAuthenticated(true);
+          fetchPortfolioData();
+        } else {
+          sessionStorage.removeItem("admin_passphrase");
+          setLoading(false);
+        }
+      })
+      .catch(() => {
+        setLoading(false);
+      });
     } else {
       setLoading(false);
     }
   }, []);
 
-  const fetchPortfolioData = async (pass: string) => {
+  const fetchPortfolioData = async () => {
     setLoading(true);
     try {
       const res = await fetch("/api/portfolio");
@@ -159,8 +176,6 @@ export default function AdminPage() {
         setProjects(data.projects || []);
         setShifts(data.shifts || []);
         setOffers(data.offers || []);
-        setIsAuthenticated(true);
-        sessionStorage.setItem("admin_passphrase", pass);
       } else {
         toast.error("Failed to load portfolio database.");
       }
@@ -172,13 +187,37 @@ export default function AdminPage() {
     }
   };
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!passphrase.trim()) {
       toast.warning("Please enter a passphrase.");
       return;
     }
-    fetchPortfolioData(passphrase);
+    
+    const loadingToast = toast.loading("Verifying...");
+    try {
+      const res = await fetch("/api/auth", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ passphrase })
+      });
+      
+      const data = await res.json();
+      
+      if (res.ok && data.success) {
+        toast.dismiss(loadingToast);
+        toast.success("Login successful!");
+        setIsAuthenticated(true);
+        sessionStorage.setItem("admin_passphrase", passphrase);
+        fetchPortfolioData();
+      } else {
+        toast.dismiss(loadingToast);
+        toast.error(data.error || "Invalid password!");
+      }
+    } catch (err) {
+      toast.dismiss(loadingToast);
+      toast.error("Network error.");
+    }
   };
 
   const handleLogout = () => {
