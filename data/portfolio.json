@@ -8,7 +8,7 @@
       "ACHIEVE YOUR GOALS"
     ],
     "hero": {
-      "image": "/uploads/1786788935948_hero_unnamed__2_.webp",
+      "image": "/uploads/1786787623444_hero_WhatsApp_Image_2026_06_19_at_8.58.00_AM.jpeg",
       "quote": "The best investment you can make is in yourself.",
       "locationText": "Near Chris Jyoti School, Hotel Chandra View, Satna, (M.P.)"
     },
@@ -157,6 +157,19 @@
       "live": "#",
       "year": "2024",
       "role": "Library"
+    },
+    {
+      "title": "Study Area",
+      "description": "Quiet and comfortable seating arrangement designed for long hours of focus.",
+      "role": "Hall",
+      "year": "2026",
+      "github": "#",
+      "live": "#",
+      "thumbnail": "/uploads/1786789016742_unnamed__1_.webp",
+      "gradient": "#14f195, rgb(13, 1, 60)",
+      "techStack": [
+        "premium"
+      ]
     }
   ]
 }
