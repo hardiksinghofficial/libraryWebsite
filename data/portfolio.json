@@ -8,7 +8,7 @@
       "ACHIEVE YOUR GOALS"
     ],
     "hero": {
-      "image": "/uploads/1786789195094_hero_unnamed__2_.webp",
+      "image": "/uploads/1786787623444_hero_WhatsApp_Image_2026_06_19_at_8.58.00_AM.jpeg",
       "quote": "The best investment you can make is in yourself.",
       "locationText": "Near Chris Jyoti School, Hotel Chandra View, Satna, (M.P.)"
     },
@@ -37,8 +37,8 @@
       }
     },
     "seats": {
-      "available": 15,
-      "total": 56
+      "available": 42,
+      "total": 100
     }
   },
   "shifts": [
@@ -143,7 +143,7 @@
       "year": "2026",
       "github": "#",
       "live": "#",
-      "thumbnail": "/uploads/1786789072812_unnamed__1_.webp",
+      "thumbnail": "/uploads/1786789329284_unnamed__1_.webp",
       "gradient": "#14f195, rgb(13, 1, 60)",
       "techStack": [
         "premium"
@@ -160,6 +160,20 @@
       "gradient": "#14f195, rgb(13, 1, 60)",
       "techStack": [
         "premium"
+      ]
+    },
+    {
+      "title": "Premium Resources",
+      "description": "Access to high-quality books, study materials, and high-speed Wi-Fi.",
+      "role": "Hall",
+      "year": "2026",
+      "github": "#",
+      "live": "#",
+      "thumbnail": "/uploads/1786789330131_unnamed.webp",
+      "gradient": "#14f195, rgb(13, 1, 60)",
+      "techStack": [
+        "quiet",
+        "ac"
       ]
     }
   ]
