@@ -137,17 +137,6 @@
   ],
   "projects": [
     {
-      "title": "Study Area",
-      "description": "Quiet and comfortable seating arrangement designed for long hours of focus.",
-      "thumbnail": "https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&q=80&w=800",
-      "techStack": [],
-      "gradient": "#14f195, rgb(13, 1, 60)",
-      "github": "#",
-      "live": "#",
-      "year": "2024",
-      "role": "Facility"
-    },
-    {
       "title": "Premium Resources",
       "description": "Access to high-quality books, study materials, and high-speed Wi-Fi.",
       "thumbnail": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=800",
@@ -165,7 +154,7 @@
       "year": "2026",
       "github": "#",
       "live": "#",
-      "thumbnail": "/uploads/1786789016742_unnamed__1_.webp",
+      "thumbnail": "/uploads/1786789028707_unnamed__1_.webp",
       "gradient": "#14f195, rgb(13, 1, 60)",
       "techStack": [
         "premium"
