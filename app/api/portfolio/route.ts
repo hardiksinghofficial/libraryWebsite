@@ -127,7 +127,7 @@ export async function POST(req: NextRequest) {
           
           if (!imgPutRes.ok) throw new Error("GitHub logo upload failed");
           
-          siteConfig.logoImage = `/uploads/${safeName}`;
+          siteConfig.logoImage = `https://raw.githubusercontent.com/${githubOwner}/${githubRepo}/main/public/uploads/${safeName}`;
         } else {
           const uploadDir = path.join(process.cwd(), "public", "uploads");
           await fs.mkdir(uploadDir, { recursive: true });
@@ -168,7 +168,7 @@ export async function POST(req: NextRequest) {
           
           if (!imgPutRes.ok) throw new Error("GitHub hero upload failed");
           
-          siteConfig.hero.image = `/uploads/${safeName}`;
+          siteConfig.hero.image = `https://raw.githubusercontent.com/${githubOwner}/${githubRepo}/main/public/uploads/${safeName}`;
         } else {
           const uploadDir = path.join(process.cwd(), "public", "uploads");
           await fs.mkdir(uploadDir, { recursive: true });

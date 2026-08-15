@@ -106,18 +106,26 @@ export default function Contact() {
           </button>
         </form>
 
-        <div className="flex-1 w-full flex flex-col gap-4 h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-lg border border-border bg-zinc-100 dark:bg-zinc-900 mt-8 md:mt-0">
-          <iframe 
-            src={mapEmbedUrl} 
-            width="100%" 
-            height="100%" 
-            style={{ border: 0 }} 
-            allowFullScreen={true} 
-            loading="lazy" 
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Insight Library Location"
-            className="w-full h-full"
-          ></iframe>
+        <div className="flex-1 w-full flex flex-col gap-4 h-[300px] md:h-[450px] rounded-2xl overflow-hidden shadow-lg border border-border bg-zinc-100 dark:bg-zinc-900 mt-8 md:mt-0 relative group">
+          {!mapEmbedUrl.includes("embed") ? (
+            <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-zinc-900 text-zinc-300">
+              <span className="text-red-400 text-3xl mb-4">⚠️</span>
+              <p className="font-bold text-white mb-2">Invalid Google Maps Link</p>
+              <p className="text-sm">Please use an "Embed a map" link, not a normal link.<br/>In Google Maps, click Share ➔ Embed a map ➔ Copy HTML.</p>
+            </div>
+          ) : (
+            <iframe 
+              src={mapEmbedUrl.includes("<iframe") ? (mapEmbedUrl.match(/src="([^"]+)"/) || [])[1] || mapEmbedUrl : mapEmbedUrl} 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen={true} 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Insight Library Location"
+              className="w-full h-full relative z-10"
+            ></iframe>
+          )}
         </div>
       </div>
     </div>
