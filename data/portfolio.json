@@ -10,7 +10,7 @@
     "hero": {
       "image": "/uploads/1786789574432_hero_unnamed__2_.webp",
       "quote": "The best investment you can make is in yourself.",
-      "locationText": "Near Chris Jyoti School, Hotel Chandra View, Satna, (M.P.)"
+      "locationText": "Near Christ Jyoti School, Hotel Chandra View, Satna, (M.P.)"
     },
     "contact": {
       "phone": "+917999436719",
@@ -37,8 +37,8 @@
       }
     },
     "seats": {
-      "available": 20,
-      "total": 56
+      "available": 5,
+      "total": 55
     }
   },
   "shifts": [
