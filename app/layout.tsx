@@ -71,6 +71,42 @@ export default function RootLayout({
           {children}
           <Toaster richColors position="bottom-right"/>
         </Providers>
+        {/* Local Business JSON-LD for Google SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "Insight Library Satna",
+              "image": "https://insightlibrary.vercel.app/og-image.jpg",
+              "@id": "https://insightlibrary.vercel.app",
+              "url": "https://insightlibrary.vercel.app",
+              "telephone": "+917999436719",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Near Chris Jyoti School, Hotel Chandra View",
+                "addressLocality": "Satna",
+                "addressRegion": "M.P.",
+                "postalCode": "485001",
+                "addressCountry": "IN"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 24.5719354,
+                "longitude": 80.8413882
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+                ],
+                "opens": "06:00",
+                "closes": "23:00"
+              }
+            })
+          }}
+        />
       </body>
     </html>
   );
