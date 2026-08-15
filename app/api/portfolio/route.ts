@@ -30,8 +30,13 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { siteConfig, shifts, offers, skills, projects, passphrase } = body;
 
-    // Check password
-    const expectedPassword = process.env.ADMIN_PASSWORD || "Hardiksin@1234";
+    // Check password securely from environment variables only
+    const expectedPassword = process.env.ADMIN_PASSWORD;
+    
+    if (!expectedPassword) {
+      return NextResponse.json({ error: "Server misconfiguration: ADMIN_PASSWORD environment variable is not set." }, { status: 500 });
+    }
+
     if (passphrase !== expectedPassword) {
       return NextResponse.json({ error: "Unauthorized: Invalid passphrase" }, { status: 401 });
     }
